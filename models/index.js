@@ -12,9 +12,16 @@ Product.belongsTo(Category, {
 Category.hasMany(Product, {
   foreignKey: 'category_id',
 });
-// Products belongToMany Tags (through ProductTag)
-
+// Products belongToMany Tags (through ProductTag). ID of product tag will define the relationship between a specific product and a specific tag. (Tag: Snacks, Product: Jalapeno chips, Product-Tag: Unique link between the two?)
+Product.belongsToMany(Tag, {
+  through: 'ProductTag',
+  foreignKey: 'product_id',
+})
 // Tags belongToMany Products (through ProductTag)
+Tag.belongsToMany(Product, {
+  through: 'ProductTag',
+  foreignKey: 'tag_id',
+})
 
 module.exports = {
   Product,
