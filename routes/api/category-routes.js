@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
   try {
     const categoryData = await Category.findAll({
       // This will retrieve every Categorie's associated Product data. In SQL, this would be a JOIN function, sequlize takes care of it.
-      // include: [{ model: Product }],
+      include: [{ model: Product }],
   });
     res.status(200).json(categoryData);
   } catch (err) {
