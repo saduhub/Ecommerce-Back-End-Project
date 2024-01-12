@@ -56,7 +56,7 @@ To set up the project locally, follow these steps:
 ## Usage
 
 1. Start the application using node and your preferred CLI (cd into Ecommerce-Back-End-Project directory): `npm run start`.
-2. Enjoy an e-commerce backend that allows you to use a CLI to track and modify all the products in your e-commerece store! 
+2. Using a platform like Insomnia, enjoy an e-commerce backend that allows you to use a CLI to track and modify all the products in your e-commerece store (frontend coming soon)! 
 
 ## Contributors
 
